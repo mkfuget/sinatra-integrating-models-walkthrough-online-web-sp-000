@@ -33,8 +33,7 @@ class TextAnalyzer
  
     arr2.each do |key, value|
       if value > biggest.values.first
-        biggest = {}
-        biggest[key] = value
+        biggest = {:letter => key, :frequency => value}
       end
     end
  
