@@ -30,13 +30,15 @@ class TextAnalyzer
     end
  
     biggest = { arr2.keys.first => arr2.values.first }
- 
+    max_letter = arr2.keys.first
+    max_frequency = arr2.values.first
     arr2.each do |key, value|
-      if value > biggest.values.first
-        biggest = {:letter => key, :frequency => value}
+      if value > max_frequency
+        max_letter = key
+        max_frequency = value
       end
     end
  
-    biggest
+    {:letter =>max_letter, :frequency => max_frequency}
   end
 end
