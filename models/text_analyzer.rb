@@ -39,6 +39,6 @@ class TextAnalyzer
       end
     end
  
-    {:letter =>max_letter.upCase, :frequency => max_frequency}
+    {:letter =>max_letter.upcase, :frequency => max_frequency}
   end
 end
