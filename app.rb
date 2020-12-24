@@ -10,6 +10,6 @@ class App < Sinatra::Base
     text_from_user = params[:user_text]
     @my_text = TextAnalyzer.new(text_from_user)
 
-    erb :index
+    erb :results
   end
 end
